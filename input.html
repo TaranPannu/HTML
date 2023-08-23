@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Enter Your Details Here</h3>
+    <form action="" method="post"> <!-- Added the correct form tag and action attribute -->
+        <label for="name">Enter Your Name:</label>
+        <input type="text" id="name" name="name" value="bunny"> <!-- Added id and name attributes default name="bunny"-->
+
+        <br>
+
+        <label for="dob">DOB:</label>
+        <input type="date" id="dob" name="dob"> <!-- Added id and name attributes -->
+
+        <br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password"> <!-- Added id and name attributes -->
+
+        <br><br>
+
+        <p>Enter your T-Shirt Size:</p>
+        <input id="sm" name="t-shirt" type="radio" value="Small">
+        <label for="sm">Small</label><br>
+        <input id="md" name="t-shirt" type="radio" value="Medium">
+        <label for="md">Medium</label><br>
+        <input id="lg" name="t-shirt" type="radio" value="Large">
+        <label for="lg">Large</label>
+
+        <br>
+
+        <input id="color" type="color" name="color">
+        <label for="color">Select Color</label>
+
+
+  <br><br> <label for="cars">Choose a car</label>
+  <select name="car" id="cars">
+      <option value=Volvo>Volvo</option>
+      <option value=Audi>Audi</option>
+      <option value=VogX>VogX</option>
+  
+  </select>
+  <br><br>
+  <textarea rows="10" cols="50"></textarea><!--Added textarea to enter message-->  <br><br>
+        <input type="reset" value="Reset">
+        <input type="submit" value="Submit"> <!-- Corrected the input type for submission -->
+        
+    </form>
+</body>
+</html>

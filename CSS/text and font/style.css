@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap');
+h1{
+    color: rgb(34, 0, 128);
+text-align: center;
+text-shadow: 2px 2px 5px red,8px 8px rgb(138, 138, 235);
+/*vertical_shadow horizontal blur*/
+}
+h2{
+    text-decoration: underline;
+    font-family: 'Tilt Prism', cursive;/* if not Tilt Prism then follow currsive */
+    font-size: 1.2rem;
+    font-weight: 800;/*to make bold inncrease value*/
+    font-style: italic;
+}
+#lk
+{
+        text-transform: capitalize;/*every first letter capital*/
+        text-align: left;
+        color: rgb(34, 0, 128);
+        font-family: 'Tilt Prism', cursive;
+text-indent: 80px;/*Starting margin on very left side*/
+    }
+    h3{
+        font-size: 3.2rem;
+
+      text-shadow: 3px 2px red,20px 20px rgb(194, 217, 194);  
+    }

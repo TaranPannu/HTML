@@ -1,0 +1,93 @@
+/* Reset some styles for consistency */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set the background color for the whole page */
+body {
+    background-color: rgb(90, 90, 195);
+}
+
+.container {
+    border: solid red;
+    height: 50vh;
+}
+
+.box {
+    border: solid red;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: circles;
+    animation-duration: 4s;
+    animation-delay: 1s; /* Start after 1 second */
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+    animation-timing-function: ease-in;
+}
+
+@keyframes circles {
+    0% {
+        transform: translate(0, 0);
+    }
+    25% {
+        transform: translate(200px, 0);
+    }
+    50% {
+        transform: translate(200px, 200px);
+    }
+    75% {
+        transform: translate(0, 200px);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+.Dot {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.dot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row;
+    gap: 10px;
+
+}
+.Dot{
+    animation: do-t 1.2s ease infinite alternate;
+}
+
+#dot-1 {
+
+    animation-delay: 0.1s;
+}
+
+.dot-2 {
+    /* Add any additional styles for dot-2 if needed */
+    animation-delay: 0.2s;
+}
+
+.dot-3 {
+    animation-delay: 0.3s;
+}
+
+.dot-4 {
+    animation-delay: 0.4s;
+}
+
+@keyframes do-t {
+    from {
+        transform: translateY(-20px);
+    }
+    to {
+        transform: translateY(20px);
+    }
+}

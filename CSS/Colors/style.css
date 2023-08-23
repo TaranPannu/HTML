@@ -1,0 +1,14 @@
+body{
+font-size: 24px;
+font-family: Arial, Helvetica, sans-serif;
+text-align: center;
+color: white;
+background-color: rgb(33, 36, 37);
+}
+/*Contrast checker to check score of ur contrast
+*/
+article{
+    background-color: rgb(63, 73, 82) ;
+padding: 40px;
+margin: 60px;
+}

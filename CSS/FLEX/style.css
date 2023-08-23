@@ -1,0 +1,53 @@
+*{
+    box-sizing: border-box;
+}
+.container{
+    border: 2px solid red;
+    height: 200px;
+    display: flex;
+  /*  flex-direction: column; default is row*/
+/*    flex-wrap: wrap;
+*/  /*gap: 10px;in this case no gap from outer parent kind of similar to margin we also have row-gap,col..*/
+flex-flow:  row;/*flex-flow: wrap row-->in row direction*/
+justify-content: space-around;/*whatever the space we have in screen will get equally distributed in main Axis space-between no space from parent*/
+align-items: center;/*from cross Axis default value is stretch centre,flex-end,flex-start*/
+}
+.box{
+    border: 2px green solid;
+    width: 80px;
+}
+#box-4{
+    flex-basis: 200px;/*remain fixed*/
+
+  /*  flex-grow: 1; to cover all def:0*/
+}
+#box-3{
+   
+    flex-grow: 3;/*to cover all*/
+}
+#box-1{flex-shrink: 3;/*will shrink first*/
+     order: 1;/*its order is higher then all othr boxes*/}
+
+.cont{
+   border: 2px solid red;
+    height: 200px;
+    display: flex;
+    flex-flow:  row;
+ /*    /*default is row*/
+flex-wrap: wrap;
+/*  row;/*flex-flow: wrap row-->in row direction*/
+justify-content: space-around;/*whatever the space we have in screen will get equally distributed in main Axis space-between no space from parent*/
+align-items: center;
+  }
+     .b{
+      border: 2px green solid;
+    width: 100px;
+     }
+     #box-4{
+      flex-basis: 200px;/*remain fixed*/
+  
+    /* to cover all def:0*/
+  }
+  #l{
+    flex-grow: 1;  
+  }

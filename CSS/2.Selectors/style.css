@@ -1,0 +1,26 @@
+*{
+    font-family: fantasy;
+}
+body
+{
+    font-size: 10px;
+}
+#first{
+    color: red;
+}
+.purple{
+    color: blue !important ;/* no matter wht this will apply*/
+    font-family: monospace;
+}
+.highlight{
+    background-color: rgb(241, 241, 136);
+}
+#first, #second{
+    text-align: center;
+    color: green;
+}
+#first>p{/*nesting of selectors */
+    background-color: rgb(162, 193, 162);
+}
+
+/*Comment ID>Class>Element */

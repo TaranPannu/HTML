@@ -1,0 +1,31 @@
+main{
+    border: 5px solid brown;
+    width: 50%;/* 50% of parent      or 50vw means 50% of view(visible area) width*/
+}
+section{
+    border: 5px dashed green;
+    width: 50%;
+}
+
+body{
+    font-size: 1em;/*relative to parent em    deafault parent em=1   and px is fix irrespective of parent*/
+}
+header{
+    font-size: 2em;
+}
+h1{
+    font-size: 3rem;/*will work relative to root element here root is body will not consider header if em then 3*2=6em*/
+}
+
+*{/*Universal selector*/
+margin: 0;/* Means we will handle spacing*/
+padding: 0;
+box-sizing: border-box;/* after writing this box will be 200*200px as per width and height assigned by us*/
+}
+.box{
+    border: 20px solid red;
+    padding: 40px 30px 10px;
+    margin: 40px;
+    width: 200px;/*Here content is 200*200 after that padding border and all that comes*/
+    height: 200px;
+}

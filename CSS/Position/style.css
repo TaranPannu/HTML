@@ -1,0 +1,44 @@
+.container
+{
+    width: 300px;
+    height: 300px;
+    background-color: rgb(216, 211, 211);
+margin: 100px;
+}
+.box
+{
+height: 100px;
+    width: 100px;
+}
+.red{
+    position: relative;/*As per parent relative*/
+    background-color: red;
+    top: 100px;
+    left: 100px;
+}
+.green{
+    position: absolute;/*As per whole screen*/
+    background-color: green;
+    bottom: 0;
+    right: 0;
+    z-index: 1;/*If we want green to come above blue more z-index more towards the user*/
+}
+.blue
+{
+position: fixed;/*now its position will remain fixed no matter what even when scrolling*/
+    background-color: blue;
+    bottom: 50px;
+    right: 50px;
+}
+
+.purple
+{
+ background-color: purple;  
+  position: sticky; /*sticky is a new feature in css which allows the element to stick when it reaches the parents*/
+top:150px;/*imp to define fpr sticky          from its parent*/
+}
+
+.spacer
+{
+    height: 300vh;
+}

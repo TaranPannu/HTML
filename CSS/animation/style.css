@@ -1,0 +1,26 @@
+.container{
+    width: 400px;
+    height: 400px;
+    background-color: steelblue;
+    margin: 80px auto;
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: tomato;
+    font-size: 4rem;
+    display: flex;
+    justify-content: center; 
+align-items: center;  
+transition: 0.5s ease;
+/*transform: scale(1); Default value is 1 and 2 means twice the orginal size
+ or scaleX() scaleY() scaleZ()can use together , */
+ /*transform: skew(25deg ) */
+ /*transform: rotate(45deg);rotate from origin*/
+ transform-origin: top left;/* transform-origin: top left  Rotate origin in top left    if transform-origin: top then from center to top is origin */
+}
+
+.box:hover{
+    transform: rotate(45deg);
+}

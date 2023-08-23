@@ -1,0 +1,28 @@
+p
+{
+  margin-top: 30px;
+background-color: rgb(240, 196, 196);
+color: rgb(5, 18, 105);
+}
+body{
+}
+h1{
+  text-align: center;
+  background-color: yellow;
+  padding: 25px;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  }
+  section{
+    padding: 25px;
+  display: inline-block;
+  }
+  span{
+    background-color: green;
+    padding: 20px;
+    display: inline-block;
+
+  }

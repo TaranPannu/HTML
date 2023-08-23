@@ -1,0 +1,13 @@
+.box{
+    margin: 100px auto;
+    width: 200px;
+    height: 200px;
+    background-color: teal;
+    transition: 0.3s;
+}
+.box:hover{
+    background-color: purple;
+    border-radius: 100px;
+    transform: rotate(180deg);
+
+}
