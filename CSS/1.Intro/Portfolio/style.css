@@ -3,109 +3,264 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-.top-container{
+html {
+    scroll-behavior: smooth;
+}
+.top-container {
+    margin-top: -10px;
     width: 100%;
-
- padding: 30px;
-    list-style: none;
-    text-align: center;
-    background-color: rgb(38, 2, 96);
+    padding: 5px;
+    background-color: #131f3d;
     color: white;
 }
-#name{
-    margin-top: 30px;
-    font-size: 3.5rem;
-   font-weight: 800px;
-   margin-right: 100px;
+.x{
+    color: white;
+    text-decoration: none; 
 }
-li{
-    display: inline; 
-   padding: 20px;
-   font-size: 1.2rem;
+.nav-links {
+    margin-right: 25%;
+    display: flex;
+    font: bold;
+       justify-content: flex-end; 
+gap: 35px;
 }
-.hover:hover {
+
+.hover{
+    margin-top: 29px;
+    color: white;
+
+}
+
+#name {
+    font-size: 50px;
+    margin-right: 50px;
+    font-style: bold;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Outfit', cursive;  
+}
+
+li {
+    list-style: none;
+    padding: 10px;
+    font-size: 1.2rem;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Outfit', cursive;  
+}
+
+.x:hover {
     color: rgb(5, 96, 186);
     cursor: pointer;
 }
-.container-1{
-    height:500px;
-    background-color: rgb(38, 2, 96);
+
+
+
+
+@media screen and (max-width: 880px) {
+    .container-1 {
+        margin-left: 29%;
+        margin-right: 0%;
+        align-items: center;
+
+    }
+    .container-2 {
+        margin-left: 20%;
+        margin-right: 0%;
+align-items: center;
+    }
+}
+.container-1-1 {
+    background-color: #131f3d;
+    height: 10px;
+}
+.head {
+    padding-top:20px;
+    background-color: #131f3d;
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap-reverse ; /* Allow items to wrap to the next line */
+    justify-content: center; /* Add space between containers */
+    gap: -20px;
+
+}
+.resume-btn{
+    cursor: pointer;
+
+    margin-top: 15%;
+    width: 160px;
+    height: 50px;
+    border-radius:50px;
+    align-items: center;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Outfit', cursive; 
+    font-size: 1.1rem;
+    color: white;
+    background-color: #ff5823;
+    transition: transform 1.0s, border 1s;
+}
+.resume-btn:hover {
+    transform: scale(1.1); /* Zoom in on hover */
+    color: black;
+    background-color: white;
+}
+.container-1 {
     
-}
-.container-1-1{
-    background-color: rgb(38, 2, 96);
-display: flex;
-}
-.profile-pic {
-    width: 300px;
-    height: 300px;
-    border-radius: 50%; /* To make it circular */
-    position: absolute;
-    left: 900px;
-    top: 190px;
-    transition: transform 1.5s, border 1.5s;
+
+    margin-left: 16%;
+    flex: 1; /* Make container-1 grow to fill available space */
+    height: 400px;
+    background-color: #131f3d;
 }
 
-.profile-pic:hover {
-    transform: scale(1.2); /* Zoom in on hover */
-    border: 5px solid rgb(244, 243, 246); /* Add a border on hover */
+.container-2 {
+
+    margin-right: 16%;
+}
+
+.profile-pic {
+
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    transition: transform 1.5s, border 1.5s;
+    object-fit: cover;
+}
+
+.shadow {
+    position: relative;
+    width: 330px;
+    height: 330px;
+    border-radius: 50%;
+    box-shadow: 0 1px 0 0px white;
+    margin-top: -320px;
+    left: -15px;
+    transition: transform 1.5s, border 1.5s;
+
+}
+.shadow:hover {
+    transform: scale(0.9); /* Zoom in on hover */
 }
 
 .cont-img {
-    background-color: rgb(38, 2, 96);
+    
+    background-color: #131f3d;
     width: 100%;
-    height: 130px; /* Adjust height as needed */
-    position: absolute;
-  
+    height: 80px; /* Adjust height as needed */
 }
-.title{
+
+.title {
     color: white;
-    position: relative;
-    top: 100px;
-    left: 220px;
+    top: 5px;
     font-size: 2.0rem;
-    font-weight: 800px;
+    -webkit-font-smoothing: antialiased;
+        font-family: 'Outfit', cursive;  
 }
 
-.soft{
-    color: white;
-display: flex;
-flex-flow: row;
-flex-direction: row;
-font-size:60px;
-position: relative;
-
-top: 120px;
-    left: 220px;
+.soft {
+    margin-left: 20px;
+    color: #ff5823;
+    display: flex;
+    flex-flow: row;
+    flex-direction: row;
+    font-size: 30px;
+    margin-top: 6px;
 }
-.software  {
-   animation: so-ft 1s ease infinite alternate both;
 
+.space {
+    width: 10px;
 }
-s{
-animation-delay:0.1s ;
-}
-.o{
-    animation-delay:0.2s ;
-    }
-    .f{
-        animation-delay:0.3s ;
-        }
-        .t{
-            animation-delay:0.4s ;
-            }
- 
 
+.software {
+    animation: so-ft 1.4s ease infinite alternate both;
+}
+
+.s {
+    animation-delay: 0.0s;
+}
+
+.o {
+    animation-delay: 0.1s; /* Updated to 0.1s */
+}
+
+.f {
+    animation-delay: 0.2s; /* Updated to 0.2s */
+}
+
+.t {
+    animation-delay: 0.3s; /* Updated to 0.3s */
+}
+
+.w {
+    animation-delay: 0.4s; /* Updated to 0.4s */
+}
+
+.a {
+    animation-delay: 0.5s; /* Updated to 0.5s */
+}
+
+.r {
+    animation-delay: 0.6s; /* Updated to 0.6s */
+}
+
+.e {
+    animation-delay: 0.7s; /* Updated to 0.7s */
+}
+
+.dd {
+    animation-delay: 0.8s; /* Updated to 0.8s */
+}
+
+.E {
+    animation-delay: 0.9s; /* Updated to 0.9s */
+}
+
+.vv {
+    animation-delay: 1.0s; /* Updated to 1.0s */
+}
+
+.E2 {
+    animation-delay: 1.1s; /* Updated to 1.1s */
+}
+
+.ll {
+    animation-delay: 1.2s; /* Updated to 1.2s */
+}
+
+.oo {
+    animation-delay: 1.3s; /* Updated to 1.3s */
+}
+
+.pp {
+    animation-delay: 1.4s; /* Updated to 1.4s */
+}
+
+.ee {
+    animation-delay: 1.5s; /* Updated to 1.5s */
+}
+
+.rr {
+    animation-delay: 1.6s; /* Updated to 1.6s */
+}
 
 @keyframes so-ft {
-    0% {
-        opacity: 1; /* Start with full opacity */
-    }
-    25%{
-        opacity: 0.5;
-    }
-    75% {
-        opacity: 0; /* Fade away to zero opacity */
+  
+
+    from{opacity: 1;
+    }to{
+        opacity: 0;
     }
 }
+
+.contact {
+    padding-top: 75px;
+    display: flex;
+    align-items: center; /* Vertical centering */
+    margin-left: 110px;}
+
+.contact-icon {
+    border-radius: 25%;
+    width: 18px; /* Adjust the width and height as needed */
+    height: 18px;
+    margin-left: 10px ;
+    transition: transform 0.6s ease;}
+.contact-icon:hover{
+    transform: scale(1.5); }
